@@ -16,6 +16,8 @@ filetype indent on                                  " Enable indent specfic for 
 filetype plugin on 
 filetype plugin indent on                           " Enable filetype detection
 
+" kills trailing whitespace
+autocmd BufWritePre *.py :%s/\s\+$//e
 
 set backspace=2         " sane backspace && normal backspace
 
