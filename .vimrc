@@ -128,3 +128,9 @@ let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 let g:html_indent_inctags = "html,body,head,tbody"  " indent these tags like every other tag 
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
+
+let g:syntastic_mode_map={ 
+  \ 'mode': 'active',
+  \ 'active_filetypes': [],
+  \ 'passive_filetypes': ['handlebars', 'html'] }
+
