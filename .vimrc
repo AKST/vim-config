@@ -64,6 +64,20 @@ imap kj <Esc>
 command W w
 command Q q
 
+" paste without overriding buffer
+function! RestoreRegister()
+  let @" = s:restore_reg
+  return ''
+endfunction
+
+function! s:Repl()
+    let s:restore_reg = @"
+    return "p@=RestoreRegister()\<cr>"
+endfunction
+
+" NB: this supports "rp that replaces the selection by the contents of @r
+vnoremap <silent> <expr> p <sid>Repl()
+
 " space as leader
 let mapleader=" " 
 " save session with ,s
@@ -132,5 +146,5 @@ autocmd FileType html,css EmmetInstall
 let g:syntastic_mode_map={ 
   \ 'mode': 'active',
   \ 'active_filetypes': [],
-  \ 'passive_filetypes': ['handlebars', 'html'] }
+  \ 'passive_filetypes': ['handlebars', 'html', 'sass'] }
 
