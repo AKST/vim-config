@@ -56,9 +56,7 @@ autocmd BufReadPost *
 
 " color stuff
 
-" imap ;; <Esc>
 imap jk <Esc>
-imap kj <Esc>
 
 " when i accientally hold shift 
 command W w
@@ -86,6 +84,8 @@ nnoremap <leader>s :mksession<CR>
 nnoremap <leader>a :Ag 
 " fuzzy text search 
 nnoremap <leader>e :CtrlP
+
+nnoremap <leader>n :NERDTreeToggle
 
 " allows airline to show up on a single split 
 set laststatus=2
@@ -147,4 +147,7 @@ let g:syntastic_mode_map={
   \ 'mode': 'active',
   \ 'active_filetypes': [],
   \ 'passive_filetypes': ['handlebars', 'html', 'sass'] }
+
+" so jsxhint is recongised as valid js
+let g:syntastic_javascript_checkers = ['jsxhint --esnext']
 
