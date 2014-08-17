@@ -151,3 +151,5 @@ let g:syntastic_mode_map={
 " so jsxhint is recongised as valid js
 let g:syntastic_javascript_checkers = ['jsxhint --esnext']
 
+" haskell shit
+let g:haddock_browser="/Applications/Google Chrome"

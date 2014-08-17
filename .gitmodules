@@ -88,3 +88,9 @@
 [submodule "bundle/vim-antlr"]
 	path = bundle/vim-antlr
 	url = https://github.com/rollxx/vim-antlr
+[submodule "bundle/haskellmode-vim"]
+	path = bundle/haskellmode-vim
+	url = git@github.com:lukerandall/haskellmode-vim.git
+[submodule "bundle/llvm.vim"]
+	path = bundle/llvm.vim
+	url = https://github.com/Superbil/llvm.vim
