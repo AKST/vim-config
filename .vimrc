@@ -19,25 +19,25 @@ filetype plugin indent on                           " Enable filetype detection
 " kills trailing whitespace
 autocmd BufWritePre *.py :%s/\s\+$//e
 
-set backspace=2         " sane backspace && normal backspace
+set backspace=2                                     " sane backspace && normal backspace
 
 set smartindent
-set tabstop=2           " number of visual spaces per TAB
-set softtabstop=2       " number of spaces in tab when editing
-set shiftwidth=2        
-set expandtab           " tabs are spaces
-set wrap                " stops line breaks
-set nowrap              " stops line wrapping
-set sidescroll=5        " smoother screen wrapping
-set listchars+=precedes:<,extends:> " indications of line  wrapping
-set nu                  " line numbers
+set tabstop=2                                       " number of visual spaces per TAB
+set softtabstop=2                                   " number of spaces in tab when editing
+set shiftwidth=2                                    
+set expandtab                                       " tabs are spaces
+set wrap                                            " stops line breaks
+set nowrap                                          " stops line wrapping
+set sidescroll=5                                    " smoother screen wrapping
+set listchars+=precedes:<,extends:>                 " indications of line  wrapping
+set nu                                              " line numbers
 set textwidth=80
 set autoread
 
 set foldmethod=indent
 set foldnestmax=10
 set foldenable
-set foldlevel=10        " fold level open on file open
+set foldlevel=10                                    " fold level open on file open
 
 " this turns off physical line wrapping (ie: automatic insertion of newlines)
 set textwidth=0 wrapmargin=0
