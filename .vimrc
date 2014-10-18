@@ -26,7 +26,10 @@ set tabstop=2           " number of visual spaces per TAB
 set softtabstop=2       " number of spaces in tab when editing
 set shiftwidth=2        
 set expandtab           " tabs are spaces
-set wrap
+set wrap                " stops line breaks
+set nowrap              " stops line wrapping
+set sidescroll=5        " smoother screen wrapping
+set listchars+=precedes:<,extends:> " indications of line  wrapping
 set nu                  " line numbers
 set textwidth=80
 set autoread
