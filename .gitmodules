@@ -106,3 +106,24 @@
 [submodule "bundle/vimroom"]
 	path = bundle/vimroom
 	url = git@github.com:mikewest/vimroom.git
+[submodule "bundle/vim-fireplace"]
+	path = bundle/vim-fireplace
+	url = https://github.com/tpope/vim-fireplace
+[submodule "bundle/vim-classpath"]
+	path = bundle/vim-classpath
+	url = https://github.com/tpope/vim-classpath
+[submodule "bundle/vim-fish"]
+	path = bundle/vim-fish
+	url = git@github.com:dag/vim-fish.git
+[submodule "bundle/typescript-vim"]
+	path = bundle/typescript-vim
+	url = git@github.com:leafgarland/typescript-vim.git
+[submodule "bundle/idris-vim"]
+	path = bundle/idris-vim
+	url = git@github.com:idris-hackers/idris-vim.git
+[submodule "bundle/vim-jade"]
+  path = bundle/vim-jade
+  url = git@github.com:digitaltoad/vim-jade.git
+[submodule "bundle/purescript-vim"]
+	path = bundle/purescript-vim
+	url = git@github.com:raichoo/purescript-vim.git
