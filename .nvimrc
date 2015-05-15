@@ -7,6 +7,7 @@ Plug 'altercation/vim-colors-solarized'
 
 " Plug 'bronson/vim-trailing-whitespace'
 Plug 'derekwyatt/vim-scala', { 'for': 'scala' }
+Plug 'mtscout6/vim-cjsx'
 Plug 'ervandew/supertab'
 Plug 'wting/rust.vim'
 Plug 'Lokaltog/powerline'
@@ -46,6 +47,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'idris-hackers/idris-vim'
 Plug 'digitaltoad/vim-jade'
 Plug 'raichoo/purescript-vim'
+Plug 'ntpeters/vim-better-whitespace'
 
 call plug#end()
 
@@ -61,6 +63,7 @@ set bg=dark
 
 " ignore stuff for nerd tree
 let NERDTreeIgnore=['\.pyc','\~$','\.swo$','\.swp$','\.git','\.hg','\.svn','\.bzr']
+
 
 
 filetype indent on                                  " Enable indent specfic for files
@@ -132,8 +135,6 @@ vnoremap <silent> <expr> p <sid>Repl()
 
 " space as leader
 let mapleader=" " 
-" save session with ,s
-nnoremap <leader>s :mksession<CR> 
 " fuzzy text search 
 nnoremap <leader>e :CtrlP
 
@@ -147,7 +148,7 @@ set laststatus=2
 let g:ctrlp_match_window = 'bottom,order:ttb'
 let g:ctrlp_switch_buffer = 0
 let g:ctrlp_working_path_mode = 0
-let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+let g:ctrlp_user_command = 'ag %s --ignore "^(.git|bower_components|node_modules)" -l --nocolor --hidden -g ""'
 
 
 " html related stuff
