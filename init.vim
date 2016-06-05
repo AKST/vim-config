@@ -86,11 +86,11 @@ call add(NERDTreeIgnore, '\.o')
 
 
 filetype indent on                                  " Enable indent specfic for files
-filetype plugin on 
+filetype plugin on
 filetype plugin indent on                           " Enable filetype detection
 
 " kills trailing whitespace
-autocmd BufWritePre *.py :%s/\s\+$//e
+autocmd BufWritePre * :%s/\s\+$//e
 
 " sane backspace && normal backspace
 set backspace=2
@@ -154,8 +154,8 @@ autocmd! BufReadPost *
 " maps jk to Esc
 inoremap jk <Esc>
 
-" maps jk to Enter Edit mode
-tnoremap jk <C-\><C-n>
+" maps hl to Enter Edit mode
+tnoremap hl <C-\><C-n>
 
 " when i accientally hold shift
 command! W w
