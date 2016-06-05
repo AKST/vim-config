@@ -155,7 +155,7 @@ autocmd! BufReadPost *
 inoremap jk <Esc>
 
 " maps hl to Enter Edit mode
-tnoremap hl <C-\><C-n>
+tnoremap hj <C-\><C-n>
 
 " when i accientally hold shift
 command! W w
