@@ -151,6 +151,10 @@ autocmd! BufReadPost *
   \   exe "normal! g`\"" |
   \ endif
 
+" remove line numbers from terminals
+autocmd! BufEnter term://*
+      \ setlocal norelativenumber
+
 " maps jk to Esc
 inoremap jk <Esc>
 
