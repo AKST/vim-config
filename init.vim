@@ -4,11 +4,13 @@
 call plug#begin('~/.nvim/plugged')
 
 Plug 'altercation/vim-colors-solarized'
+Plug 'tikhomirov/vim-glsl'
 
 " Plug 'bronson/vim-trailing-whitespace'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'neovimhaskell/haskell-vim'
-Plug 'facebook/vim-flow'
+Plug 'elixir-lang/vim-elixir'
+" Plug 'facebook/vim-flow'
 Plug 'mattn/webapi-vim'
 Plug 'jbgutierrez/vim-babel'
 Plug 'derekwyatt/vim-scala', { 'for': 'scala' }
@@ -57,6 +59,7 @@ Plug 'idris-hackers/idris-vim'
 Plug 'digitaltoad/vim-jade'
 Plug 'raichoo/purescript-vim'
 Plug 'ntpeters/vim-better-whitespace'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
