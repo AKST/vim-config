@@ -5,10 +5,10 @@ function! ClearTrailingWhiteSpace()
   normal! 'z"
 endfunc
 
-" augroup akst__kill_white_space
-"   autocmd!
-"   autocmd BufWritePre * call ClearTrailingWhiteSpace()
-" augroup END
+augroup akst__kill_white_space
+  autocmd!
+  autocmd BufWritePre * call ClearTrailingWhiteSpace()
+augroup END
 
 let ft_that_usetabs = ['make']
 
