@@ -14,6 +14,7 @@ Plug 'mattn/webapi-vim'
 Plug 'jbgutierrez/vim-babel'
 Plug 'derekwyatt/vim-scala', { 'for': 'scala' }
 Plug 'mtscout6/vim-cjsx'
+Plug 'nikvdp/ejs-syntax'
 
 Plug 'posva/vim-vue'
 Plug 'facebook/vim-flow'

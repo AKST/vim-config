@@ -1,5 +1,7 @@
 " ignore stuff for nerd tree
 let NERDTreeIgnore=[]
+call add(NERDTreeIgnore, '^tmp')
+call add(NERDTreeIgnore, '^node_modules')
 call add(NERDTreeIgnore, '\.pyc')
 call add(NERDTreeIgnore, '\~$')
 call add(NERDTreeIgnore, '\.swo$')
