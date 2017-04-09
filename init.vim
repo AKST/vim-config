@@ -18,10 +18,10 @@ Plug 'mtscout6/vim-cjsx'
 Plug 'nikvdp/ejs-syntax'
 
 Plug 'posva/vim-vue'
-Plug 'facebook/vim-flow'
-" Plug 'hail2u/vim-css3-syntax'
 Plug 'pangloss/vim-javascript'
-" Plug 'othree/yajs.vim'
+" Plug 'flowtype/vim-flow'
+" Plug 'hail2u/vim-css3-syntax'
+Plug 'othree/yajs.vim'
 Plug 'ervandew/supertab'
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 Plug 'Lokaltog/powerline'
