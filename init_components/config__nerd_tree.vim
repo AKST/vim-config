@@ -2,6 +2,7 @@
 let NERDTreeIgnore=[]
 call add(NERDTreeIgnore, '^tmp')
 call add(NERDTreeIgnore, '^node_modules')
+call add(NERDTreeIgnore, '^__pycache__')
 call add(NERDTreeIgnore, '^bower_components')
 call add(NERDTreeIgnore, '^flow-typed')
 call add(NERDTreeIgnore, '\.pyc')

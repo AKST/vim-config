@@ -5,7 +5,9 @@ call plug#begin('~/.nvim/plugged')
 
 Plug 'altercation/vim-colors-solarized'
 Plug 'tikhomirov/vim-glsl'
+Plug 'lumiliet/vim-twig'
 
+Plug 'http://www.vim.org/scripts/download_script.php?src_id=1523'
 " Plug 'bronson/vim-trailing-whitespace'
 Plug 'octol/vim-cpp-enhanced-highlight'
 " Plug 'neovimhaskell/haskell-vim'
