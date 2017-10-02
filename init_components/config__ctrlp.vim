@@ -9,6 +9,7 @@ call add(ignored_dirs, '__pycache__')
 call add(ignored_dirs, 'node_modules')
 call add(ignored_dirs, 'bower_components')
 call add(ignored_dirs, 'flow-typed')
+call add(ignored_dirs, 'target')
 call add(ignored_dirs, 'dist')
 call add(ignored_dirs, 'tmp')
 

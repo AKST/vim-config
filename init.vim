@@ -7,7 +7,6 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'tikhomirov/vim-glsl'
 Plug 'lumiliet/vim-twig'
 
-Plug 'http://www.vim.org/scripts/download_script.php?src_id=1523'
 " Plug 'bronson/vim-trailing-whitespace'
 Plug 'octol/vim-cpp-enhanced-highlight'
 " Plug 'neovimhaskell/haskell-vim'
@@ -18,6 +17,8 @@ Plug 'jbgutierrez/vim-babel'
 Plug 'derekwyatt/vim-scala', { 'for': 'scala' }
 Plug 'mtscout6/vim-cjsx'
 Plug 'nikvdp/ejs-syntax'
+
+Plug 'cespare/vim-toml'
 
 Plug 'posva/vim-vue'
 Plug 'pangloss/vim-javascript'
