@@ -24,7 +24,7 @@ Plug 'posva/vim-vue'
 Plug 'pangloss/vim-javascript'
 " Plug 'flowtype/vim-flow'
 " Plug 'hail2u/vim-css3-syntax'
-Plug 'stephenway/postcss.vim'
+" Plug 'stephenway/postcss.vim'
 Plug 'othree/yajs.vim'
 Plug 'ervandew/supertab'
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
