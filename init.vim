@@ -6,7 +6,7 @@ call plug#begin('~/.nvim/plugged')
 Plug 'altercation/vim-colors-solarized'
 Plug 'tikhomirov/vim-glsl'
 Plug 'lumiliet/vim-twig'
-
+"
 " Plug 'bronson/vim-trailing-whitespace'
 Plug 'octol/vim-cpp-enhanced-highlight'
 " Plug 'neovimhaskell/haskell-vim'
@@ -56,7 +56,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'embear/vim-localvimrc'
 Plug 'ekalinin/Dockerfile.vim'
 Plug 'rollxx/vim-antlr'
-
+"
 Plug 'Superbil/llvm.vim'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'gkz/vim-ls'
@@ -70,7 +70,7 @@ Plug 'idris-hackers/idris-vim'
 Plug 'digitaltoad/vim-jade'
 Plug 'raichoo/purescript-vim'
 Plug 'ntpeters/vim-better-whitespace'
-Plug 'airblade/vim-gitgutter'
+" Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
