@@ -22,6 +22,7 @@ Plug 'cespare/vim-toml'
 " Plug 'posva/vim-vue'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
+Plug 'uarun/vim-protobuf'
 
 " Plug 'othree/yajs.vim'
 Plug 'neoclide/vim-jsx-improve'
