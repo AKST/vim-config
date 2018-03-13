@@ -15,17 +15,20 @@ Plug 'elixir-lang/vim-elixir'
 Plug 'mattn/webapi-vim'
 Plug 'jbgutierrez/vim-babel'
 Plug 'derekwyatt/vim-scala', { 'for': 'scala' }
-Plug 'mtscout6/vim-cjsx'
-Plug 'nikvdp/ejs-syntax'
-
+" Plug 'mtscout6/vim-cjsx'
+" Plug 'nikvdp/ejs-syntax'
 Plug 'cespare/vim-toml'
 
-Plug 'posva/vim-vue'
+" Plug 'posva/vim-vue'
 Plug 'pangloss/vim-javascript'
-" Plug 'flowtype/vim-flow'
+Plug 'mxw/vim-jsx'
+
+" Plug 'othree/yajs.vim'
+Plug 'neoclide/vim-jsx-improve'
+Plug 'flowtype/vim-flow'
+
 " Plug 'hail2u/vim-css3-syntax'
 " Plug 'stephenway/postcss.vim'
-Plug 'othree/yajs.vim'
 Plug 'ervandew/supertab'
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 Plug 'Lokaltog/powerline'
