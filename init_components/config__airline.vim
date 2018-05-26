@@ -31,3 +31,4 @@ let g:airline_symbols.whitespace = 'Ξ'
 let g:airline#extensions#virtualenv#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tagbar#enabled = 1
+let g:airline_theme = 'solarized'
