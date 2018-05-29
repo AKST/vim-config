@@ -6,6 +6,7 @@ let g:syntastic_mode_map={
 " so jsxhint is recongised as valid js
 let g:syntastic_javascript_checkers = ['jsxhint --esnext']
 let g:syntastic_javascript_checkers = ['jsxhint --esnext']
+let g:syntastic_typescript_checkers = ['tsc', 'tslint']
 let g:syntastic_python_python_exec = '/usr/local/bin/python3'
 
 " add freaking c++ 11 baby

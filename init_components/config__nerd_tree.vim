@@ -1,8 +1,8 @@
 " ignore stuff for nerd tree
 let NERDTreeIgnore=[]
-call add(NERDTreeIgnore, '^tmp')
-call add(NERDTreeIgnore, '^dist')
-call add(NERDTreeIgnore, '^target')
+call add(NERDTreeIgnore, '^tmp/')
+call add(NERDTreeIgnore, '^dist/')
+call add(NERDTreeIgnore, '^target/')
 call add(NERDTreeIgnore, '^node_modules')
 call add(NERDTreeIgnore, '^__pycache__')
 call add(NERDTreeIgnore, '^bower_components')
