@@ -6,6 +6,7 @@ call add(ignored_dirs, '.git')
 call add(ignored_dirs, '.svn')
 
 call add(ignored_dirs, '__pycache__')
+call add(ignored_dirs, 'translations')
 call add(ignored_dirs, 'node_modules')
 call add(ignored_dirs, 'bower_components')
 call add(ignored_dirs, 'flow-typed')
