@@ -3,81 +3,144 @@
 " load plugins
 call plug#begin('~/.nvim/plugged')
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" THEME Plugins
+
 Plug 'altercation/vim-colors-solarized'
-Plug 'tikhomirov/vim-glsl'
-Plug 'lumiliet/vim-twig'
-"
-" Plug 'bronson/vim-trailing-whitespace'
-Plug 'octol/vim-cpp-enhanced-highlight'
-" Plug 'neovimhaskell/haskell-vim'
-Plug 'lukerandall/haskellmode-vim'
-Plug 'elixir-lang/vim-elixir'
-Plug 'mattn/webapi-vim'
-Plug 'jbgutierrez/vim-babel'
-Plug 'derekwyatt/vim-scala', { 'for': 'scala' }
-" Plug 'mtscout6/vim-cjsx'
-" Plug 'nikvdp/ejs-syntax'
-Plug 'cespare/vim-toml'
-
-" Plug 'posva/vim-vue'
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
-Plug 'uarun/vim-protobuf'
-Plug 'vim-erlang/vim-erlang-skeletons'
-
-" Plug 'othree/yajs.vim'
-Plug 'neoclide/vim-jsx-improve'
-Plug 'flowtype/vim-flow'
-
-" Plug 'hail2u/vim-css3-syntax'
-" Plug 'stephenway/postcss.vim'
-Plug 'ervandew/supertab'
-Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 Plug 'Lokaltog/powerline'
-Plug 'tmhedberg/SimpylFold'
-Plug 'rking/ag.vim'
-Plug 'mattn/emmet-vim'
-Plug 'groenewege/vim-less'
-Plug 'myusuf3/numbers.vim'
-Plug 'tshirtman/vim-cython'
-Plug 'mustache/vim-mustache-handlebars'
-Plug 'guns/vim-clojure-static', { 'for': 'clojure' }
-Plug 'kien/ctrlp.vim'
-Plug 'JuliaLang/julia-vim'
-Plug 'Hydrotoast/vim-gss'
-Plug 'scrooloose/nerdtree'
-Plug 'scrooloose/nerdcommenter'
-Plug 'w0rp/ale'
-" Plug 'scrooloose/syntastic'
-Plug 'kchmck/vim-coffee-script'
-Plug 'plasticboy/vim-markdown'
-" Plug 'mphe/grayout.vim'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-airline/vim-airline'
-Plug 'jmcantrell/vim-virtualenv'
-Plug 'majutsushi/tagbar'
-" Plug 'bitc/lushtags'
-Plug 'airblade/vim-gitgutter'
-" Plug 'edkolev/tmuxline.vim'
-Plug 'tpope/vim-fugitive'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" CONFIG Plugins
+
 Plug 'embear/vim-localvimrc'
-Plug 'ekalinin/Dockerfile.vim'
-Plug 'rollxx/vim-antlr'
-"
-Plug 'Superbil/llvm.vim'
-Plug 'nathanaelkane/vim-indent-guides'
-Plug 'gkz/vim-ls'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" HTML Templating Plugins
+
+Plug 'mustache/vim-mustache-handlebars'
 Plug 'tpope/vim-haml'
-Plug 'mikewest/vimroom'
-Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
-Plug 'tpope/vim-classpath'
-Plug 'dag/vim-fish'
-Plug 'leafgarland/typescript-vim'
-Plug 'idris-hackers/idris-vim'
 Plug 'digitaltoad/vim-jade'
-Plug 'raichoo/purescript-vim'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" SEARCH / AUTOCOMPLETE / NAVIGATION / FORMAT Plugins
+
+Plug 'myusuf3/numbers.vim' " line numbers
+Plug 'ervandew/supertab'
+Plug 'w0rp/ale'
 Plug 'ntpeters/vim-better-whitespace'
-" Plug 'airblade/vim-gitgutter'
+Plug 'tmhedberg/SimpylFold' " formatting
+Plug 'rking/ag.vim'
+Plug 'kien/ctrlp.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdcommenter'
+Plug 'majutsushi/tagbar'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" GIT Plugins
+
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" LANGUAGE = ANTLR Plugins
+
+Plug 'rollxx/vim-antlr'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" LANGUAGE = CLOJURE Plugins
+
+Plug 'guns/vim-clojure-static', { 'for': 'clojure' }
+Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" LANGUAGE = C++ / C Plugins
+
+Plug 'octol/vim-cpp-enhanced-highlight'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" LANGUAGE = Dockerfile Plugins
+
+Plug 'ekalinin/Dockerfile.vim'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" LANGUAGE = Erlang / Exilir Plugins
+
+Plug 'elixir-lang/vim-elixir'
+Plug 'vim-erlang/vim-erlang-skeletons'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" LANGUAGE = Fish Plugins
+
+Plug 'dag/vim-fish'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" LANGUAGE = GLSL Plugins
+
+Plug 'tikhomirov/vim-glsl'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" LANGUAGE = Haskell / Idris / Purescipt Plugins
+
+Plug 'lukerandall/haskellmode-vim'
+Plug 'idris-hackers/idris-vim'
+Plug 'raichoo/purescript-vim'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" LANGUAGE = JAVA / SCALA Plugins
+
+Plug 'derekwyatt/vim-scala', { 'for': 'scala' }
+Plug 'artur-shaik/vim-javacomplete2', { 'for': 'java' }
+Plug 'tpope/vim-classpath'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" LANGUAGE = JS / TS / LIVESCRIPT / COFFEESCRIPT Plugins
+
+Plug 'neoclide/vim-jsx-improve'
+Plug 'flowtype/vim-flow'
+Plug 'mxw/vim-jsx'
+Plug 'pangloss/vim-javascript'
+Plug 'gkz/vim-ls' " livescript
+Plug 'jbgutierrez/vim-babel'
+Plug 'kchmck/vim-coffee-script'
+Plug 'leafgarland/typescript-vim'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" LANGUAGE = Julia Plugins
+
+Plug 'JuliaLang/julia-vim'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" LANGUAGE = LLVM Plugins
+
+Plug 'Superbil/llvm.vim'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" LANGUAGE = Markdown Plugins
+
+Plug 'plasticboy/vim-markdown'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" LANGUAGE = Protobuf Plugins
+
+Plug 'uarun/vim-protobuf'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" LANGUAGE = Python Plugins
+
+Plug 'jmcantrell/vim-virtualenv'
+Plug 'tshirtman/vim-cython'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" LANGUAGE = Rust / CPP Plugins
+
+Plug 'rust-lang/rust.vim', { 'for': 'rust' }
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" LANGUAGE = Toml Plugins
+
+Plug 'cespare/vim-toml'
 
 call plug#end()
 
