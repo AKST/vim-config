@@ -24,10 +24,15 @@ Plug 'tpope/vim-haml'
 Plug 'digitaltoad/vim-jade'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" AUTOCOMPLETE Plugins
+
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" Plug 'ervandew/supertab'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " SEARCH / AUTOCOMPLETE / NAVIGATION / FORMAT Plugins
 
 Plug 'myusuf3/numbers.vim' " line numbers
-Plug 'ervandew/supertab'
 Plug 'w0rp/ale'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'tmhedberg/SimpylFold' " formatting
