@@ -11,6 +11,7 @@ endif
 
 " adds supertab like functionality to deoplete by adding tab completion
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+inoremap <expr><S-tab> pumvisible() ? "\<c-p>" : "\<tab>"
 
 " automatically closes the scratch window at the top of the vim window
 " on finishing a complete or leaving insert. If you don’t have something
