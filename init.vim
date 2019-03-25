@@ -42,6 +42,7 @@ Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'majutsushi/tagbar'
+Plug 'Shougo/denite.nvim'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " GIT Plugins
@@ -103,16 +104,19 @@ Plug 'tpope/vim-classpath'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " LANGUAGE = JS / TS / LIVESCRIPT / COFFEESCRIPT Plugins
 
-Plug 'neoclide/vim-jsx-improve'
-Plug 'flowtype/vim-flow'
-Plug 'mxw/vim-jsx'
-Plug 'pangloss/vim-javascript'
+" Plug 'neoclide/vim-jsx-improve'
+" Plug 'flowtype/vim-flow'
+" Plug 'mxw/vim-jsx'
+" Plug 'pangloss/vim-javascript'
 Plug 'gkz/vim-ls' " livescript
 Plug 'jbgutierrez/vim-babel'
 Plug 'kchmck/vim-coffee-script'
-Plug 'leafgarland/typescript-vim'
+" Plug 'leafgarland/typescript-vim'
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'mhartington/nvim-typescript', {
+  \'do': ':!cd ./rplugin/node/nvim_typescript && yarn && yarn build\|:UpdateRemotePlugins'}
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""r
 " LANGUAGE = Julia Plugins
 
 Plug 'JuliaLang/julia-vim'
