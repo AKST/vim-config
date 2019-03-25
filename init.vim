@@ -27,7 +27,8 @@ Plug 'digitaltoad/vim-jade'
 " AUTOCOMPLETE Plugins
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-" Plug 'ervandew/supertab'
+Plug 'ternjs/tern_for_vim', { 'do': 'yarn' }
+" Plug 'ervandew/supertab' " tab based completion
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " SEARCH / AUTOCOMPLETE / NAVIGATION / FORMAT Plugins
