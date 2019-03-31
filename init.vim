@@ -4,6 +4,11 @@
 call plug#begin('~/.nvim/plugged')
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" VIMSCRIPT EXTENSION
+
+Plug 'google/vim-maktaba'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " THEME Plugins
 
 Plug 'altercation/vim-colors-solarized'
@@ -31,18 +36,35 @@ Plug 'ternjs/tern_for_vim', { 'do': 'yarn' }
 " Plug 'ervandew/supertab' " tab based completion
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" SEARCH / AUTOCOMPLETE / NAVIGATION / FORMAT Plugins
+" FORMAT Plugins
 
 Plug 'myusuf3/numbers.vim' " line numbers
-Plug 'w0rp/ale'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'tmhedberg/SimpylFold' " formatting
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" SEARCH / NAVIGATION Plugins
+
 Plug 'rking/ag.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
-Plug 'majutsushi/tagbar'
+Plug 'majutsushi/tagbar' " c tags
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" VALIDATION Plugins
+
+Plug 'w0rp/ale'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" AUTOCOMPLETE Plugins
+
 Plug 'Shougo/denite.nvim'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" BUILD SYSTEMS
+
+Plug 'bazelbuild/vim-bazel'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " GIT Plugins
