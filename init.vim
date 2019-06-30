@@ -135,8 +135,8 @@ Plug 'jbgutierrez/vim-babel'
 Plug 'kchmck/vim-coffee-script'
 " Plug 'leafgarland/typescript-vim'
 Plug 'HerringtonDarkholme/yats.vim'
-Plug 'mhartington/nvim-typescript', {
-  \'do': ':!cd ./rplugin/node/nvim_typescript && yarn && yarn build\|:UpdateRemotePlugins'}
+" Plug 'mhartington/nvim-typescript', {
+"   \'do': ':!cd ./rplugin/node/nvim_typescript && yarn && yarn build\|:UpdateRemotePlugins'}
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""r
 " LANGUAGE = Julia Plugins
@@ -168,6 +168,11 @@ Plug 'tshirtman/vim-cython'
 " LANGUAGE = Rust / CPP Plugins
 
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" LANGUAGE = Terraform
+
+Plug 'hashivim/vim-terraform'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " LANGUAGE = Toml Plugins
@@ -252,4 +257,3 @@ set tabstop=2 shiftwidth=2 expandtab
 for file in split(glob('~/.config/nvim/init_components/*.vim'), '\n')
   exe 'source' file
 endfor
-
