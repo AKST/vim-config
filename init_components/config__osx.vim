@@ -9,7 +9,7 @@ if has('macunix')
   " whose ouput has trailing nulls.
   let remove_trailing_null = substitute(os_appearance, '\n\+$', '', '')
 
-  if remove_trailing_null ==? "true"
+  if remove_trailing_null ==# "true"
     set background=dark
   else
     set background=light
