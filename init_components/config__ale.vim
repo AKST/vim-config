@@ -1,3 +1,3 @@
 let g:ale_linters = {
-\   'typescript': ['tslint', 'tsserver', 'typecheck'],
+\   'typescript': ['tslint', 'tsserver', 'eslint'],
 \}

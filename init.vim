@@ -29,11 +29,21 @@ Plug 'tpope/vim-haml'
 Plug 'digitaltoad/vim-jade'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" VALIDATION Plugins
+
+Plug 'w0rp/ale'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " AUTOCOMPLETE Plugins
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'ternjs/tern_for_vim', { 'do': 'yarn' }
-" Plug 'ervandew/supertab' " tab based completion
+" Plug 'ternjs/tern_for_vim', { 'do': 'yarn' }
+" Plug 'autozimu/LanguageClient-neovim', {
+"     \ 'branch': 'next',
+"     \ 'do': 'bash install.sh',
+" Plug 'Shougo/denite.nvim'
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"     \ }
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " FORMAT Plugins
@@ -45,26 +55,16 @@ Plug 'tmhedberg/SimpylFold' " formatting
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " SEARCH / NAVIGATION Plugins
 
-Plug 'rking/ag.vim'
-Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'majutsushi/tagbar' " c tags
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" VALIDATION Plugins
-
-Plug 'w0rp/ale'
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" AUTOCOMPLETE Plugins
-
-Plug 'Shougo/denite.nvim'
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " BUILD SYSTEMS
 
-Plug 'bazelbuild/vim-bazel'
+Plug 'bazelbuild/vim-bazel', { 'for': 'java' }
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " GIT Plugins
@@ -120,10 +120,10 @@ Plug 'raichoo/purescript-vim'
 " LANGUAGE = JAVA / SCALA Plugins
 
 Plug 'derekwyatt/vim-scala', { 'for': 'scala' }
-Plug 'artur-shaik/vim-javacomplete2', { 'for': 'java' }
+" Plug 'artur-shaik/vim-javacomplete2', { 'for': 'java' }
 Plug 'tpope/vim-classpath'
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " LANGUAGE = JS / TS / LIVESCRIPT / COFFEESCRIPT Plugins
 
 " Plug 'neoclide/vim-jsx-improve'
@@ -135,8 +135,7 @@ Plug 'jbgutierrez/vim-babel'
 Plug 'kchmck/vim-coffee-script'
 " Plug 'leafgarland/typescript-vim'
 Plug 'HerringtonDarkholme/yats.vim'
-" Plug 'mhartington/nvim-typescript', {
-"   \'do': ':!cd ./rplugin/node/nvim_typescript && yarn && yarn build\|:UpdateRemotePlugins'}
+" Plug 'mhartington/nvim-typescript', { 'do': './install.sh' }
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""r
 " LANGUAGE = Julia Plugins
@@ -192,7 +191,7 @@ endif
 " syntax highlighing
 syntax enable
 colorscheme solarized
-set bg=dark
+set bg=light
 
 " Enable indent specfic for files
 filetype indent on

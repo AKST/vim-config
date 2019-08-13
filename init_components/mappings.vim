@@ -22,7 +22,7 @@ tnoremap <C-w>H <C-\><C-n>:tabp<CR>
 tnoremap <C-w>L <C-\><C-n>:tabn<CR>
 
 " fuzzy text search
-nnoremap <leader>e :CtrlP<CR>
+nnoremap <leader>e :FZF<CR>
 
 " file system viewer
 nnoremap <leader>n :NERDTreeToggle<CR>
@@ -46,4 +46,11 @@ endfunction
 
 " NB: this supports "rp that replaces the selection by the contents of @r
 vnoremap <silent> <expr> p <sid>Repl()
+
+
+nnoremap <Leader>l :call LanguageClient_contextMenu()<CR>
+" " Or map each action separately
+" nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
+" nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
+" nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 
