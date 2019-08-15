@@ -38,12 +38,12 @@ Plug 'w0rp/ale'
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " Plug 'ternjs/tern_for_vim', { 'do': 'yarn' }
-" Plug 'autozimu/LanguageClient-neovim', {
-"     \ 'branch': 'next',
-"     \ 'do': 'bash install.sh',
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
 " Plug 'Shougo/denite.nvim'
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
-"     \ }
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " FORMAT Plugins
