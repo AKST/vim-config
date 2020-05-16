@@ -6,7 +6,7 @@ let g:deoplete#enable_at_startup = 1
 
 " ensures that deoplete utlizes omni patterns
 if !exists('g:deoplete#omni#input_patterns')
-  let g:deoplete#omni#input_patterns = {}
+  " let g:deoplete#omni#input_patterns = {}
 endif
 
 " adds supertab like functionality to deoplete by adding tab completion

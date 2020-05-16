@@ -58,8 +58,9 @@ Plug 'tmhedberg/SimpylFold' " formatting
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'majutsushi/tagbar' " c tags
-Plug '/usr/local/opt/fzf'
-Plug 'junegunn/fzf'
+" Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " BUILD SYSTEMS

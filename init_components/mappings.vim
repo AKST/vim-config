@@ -21,8 +21,11 @@ nnoremap <C-w>L :tabn<CR>
 tnoremap <C-w>H <C-\><C-n>:tabp<CR>
 tnoremap <C-w>L <C-\><C-n>:tabn<CR>
 
-" fuzzy text search
-nnoremap <leader>e :FZF<CR>
+if executable('rg')
+  nnoremap <Leader>e :RG<CR><space>
+else
+  nnoremap <leader>e :FZF<CR>
+endif
 
 " file system viewer
 nnoremap <leader>n :NERDTreeToggle<CR>
