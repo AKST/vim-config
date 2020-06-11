@@ -22,10 +22,10 @@ tnoremap <C-w>H <C-\><C-n>:tabp<CR>
 tnoremap <C-w>L <C-\><C-n>:tabn<CR>
 
 if executable('rg')
-  nnoremap <Leader>e :RG<CR><space>
-else
-  nnoremap <leader>e :FZF<CR>
+  nnoremap <Leader>E :RG<CR><space>
 endif
+
+nnoremap <leader>e :FZF<CR>
 
 " file system viewer
 nnoremap <leader>n :NERDTreeToggle<CR>
